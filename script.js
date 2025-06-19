@@ -27,7 +27,7 @@
     //Buscador de endereço no ViaCep quando o cep fica commpleto
     cepInput.addEventListener('input', async (e) => {
         const cep = e.target.value.replace(/\D/g,'');
-        if (cep.lenght !== 8) return;
+        if (cep.length !== 8) return;
 
         try {
             statusEl.textContent = ('Buscando CEP...');
